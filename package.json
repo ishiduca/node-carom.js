@@ -1,0 +1,11 @@
+{
+    "name": "carom.js"
+  , "main": "./index.js"
+  , "version": "0.0.1-alpha"
+  , "author": "ishiduca <ishiduca@gmail.com>"
+  , "keywords": [ "web", "framework" ]
+  , "description": "foundation for web framework"
+  , "dependencies": {
+        "mime": "1.2.x"
+    }
+}
