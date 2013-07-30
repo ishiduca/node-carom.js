@@ -8,4 +8,7 @@
   , "dependencies": {
         "mime": "1.2.x"
     }
+  , "devDependencies": {
+        "tape": "*"
+    }
 }
