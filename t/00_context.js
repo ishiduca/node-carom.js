@@ -3,8 +3,13 @@ var Context = require(path.join( __dirname, '../lib/context'));
 var test = require('tape');
 
 var stream = require('stream');
-var _req = new stream.Stream; _req.headers = {};
-var _res = new stream.Stream; _res.buf = [];
+var _req = new stream.Stream;
+var _res = new stream.Stream;
+
+_req.headers = {};
+_req.url  = 'http://dummy.org/hoge?foo=bar';
+
+_res.buf = [];
 _res.writeHead = function (statusCode, headers) {
     this.statusCode = statusCode;
     this.headers    = headers;
@@ -40,7 +45,7 @@ test('new Context(req, res)', function (t) {
 
     z.once('request.end', function () {
         t.equal( z.raw, 'A=a&B=bb&C=ccc' );
-        t.deepEqual( z.data, {A: 'a', B: 'bb', C: 'ccc'});
+        t.deepEqual( z.data, {A: 'a', B: 'bb', C: 'ccc', foo: 'bar'});
 
         z.request.headers = {};
         z.response.clear();
