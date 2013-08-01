@@ -1,0 +1,10 @@
+{
+    "dependencies": {
+        "router-line": "0.2.x"
+      , "filed": "0.1.x"
+	  , "hogan.js": "2.0.x"
+    }
+  , "devDependencies": [
+        "tape"
+    ]
+}
