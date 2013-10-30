@@ -19,7 +19,7 @@ var app   = Object.create(carom).constructor({
             statusCode || (statusCode = 200)
             headers || (headers = {})
             headers['content-type'] = 'text/plain; charset=utf-8'
-			headers['content-length'] = Buffer.byteLength(data)
+            headers['content-length'] = Buffer.byteLength(data)
 
             this.res.writeHead(statusCode, headers)
             this.res.end(data)
@@ -38,7 +38,7 @@ app.use(function (req, res, next) {
     }
 
     if (body.method === 'POST') {
-	    body.body = ''
+        body.body = ''
         req.on('data', function (c) { body.body += c })
         req.on('end', function () {
             this.end(JSON.stringify(body))
