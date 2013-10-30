@@ -1,0 +1,11 @@
+name: carom.js
+main: ./
+version: 0.0.2
+author: ishiduca@gmail.com
+devDependencies:
+  qunitjs: 1.10.x
+  qunit-tap: 1.4.x
+  sinon: "*"
+keywords:
+  - webapplication
+description: foundation for web application

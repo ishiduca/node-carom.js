@@ -1,14 +1,16 @@
 {
-    "name": "carom.js"
-  , "main": "./index.js"
-  , "version": "0.0.1-alpha"
-  , "author": "ishiduca <ishiduca@gmail.com>"
-  , "keywords": [ "web", "framework" ]
-  , "description": "foundation for web framework"
-  , "dependencies": {
-        "mime": "1.2.x"
-    }
-  , "devDependencies": {
-        "tape": "*"
-    }
+   "keywords" : [
+      "webapplication"
+   ],
+   "devDependencies" : {
+      "qunit-tap" : "1.4.x",
+      "sinon" : "*",
+      "qunitjs" : "1.10.x"
+   },
+   "version" : "0.0.2",
+   "name" : "carom.js",
+   "author" : "ishiduca@gmail.com",
+   "description" : "foundation for web application",
+   "main" : "./"
 }
+
